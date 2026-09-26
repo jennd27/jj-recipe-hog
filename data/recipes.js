@@ -1,0 +1,677 @@
+const RECIPES = [
+  {
+    "id": "chana-masala",
+    "name": "Chana Masala",
+    "url": "https://www.indianhealthyrecipes.com/chana-masala/",
+    "image": null,
+    "procedure": "Soak the chickpeas overnight, then cook them (pressure cooker, Instant Pot, or a long simmer) until soft. Heat oil and fry the chopped onion until golden, then stir in the ginger garlic paste and green chili for a minute. Add the tomatoes and salt and cook until they break down into a soft, jammy base. Stir in the turmeric, red chili powder, garam masala and coriander powder and cook briefly until fragrant. Add the cooked chickpeas along with a splash of their cooking liquid, and simmer everything together until it thickens. Finish with the kasuri methi and a scatter of fresh coriander leaves before serving.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander powder",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "kasuri methi",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander leaves",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "dal-tadka",
+    "name": "Dal Tadka",
+    "url": "https://www.indianhealthyrecipes.com/dal-tadka/",
+    "image": null,
+    "procedure": "Rinse the lentils well and pressure-cook them with water until soft and mushy, then lightly mash. Separately, heat ghee and toast the cumin seeds, then add the ginger garlic paste, chopped onion and green chili and fry until golden. Stir in the turmeric, red chili powder and garam masala, then add the tomatoes and salt and cook until soft. Pour this masala into the cooked lentils and simmer for several minutes, adjusting the consistency with hot water as needed. Crush the kasuri methi over the top and stir in fresh coriander. For the finishing tadka, briefly sizzle a little extra ghee to pour over the dal just before serving.",
+    "ingredients": [
+      {
+        "name": "yellow lentils",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "kasuri methi",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ghee",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "coriander leaves",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "aloo-gobi",
+    "name": "Aloo Gobi",
+    "url": "https://www.indianhealthyrecipes.com/aloo-gobi-recipe/",
+    "image": null,
+    "procedure": "Heat oil and temper the cumin seeds, then add the ginger garlic paste and chopped onion and green chili and fry until softened. Add the cubed potatoes, cover, and cook until they're about half done, adding a splash of water if the pan looks dry. Stir in the cauliflower florets and cook a few minutes more. Sprinkle over the turmeric, red chili powder and garam masala, mix well, cover again, and cook until the potatoes are tender while the cauliflower still has a little bite. Season with salt, finish with a squeeze of lemon juice if you like, and garnish with coriander leaves.",
+    "ingredients": [
+      {
+        "name": "potato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "cauliflower",
+        "amount": 2,
+        "unit": "cup"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "oil",
+        "amount": 2.5,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "palak-paneer",
+    "name": "Palak Paneer",
+    "url": "https://www.indianhealthyrecipes.com/palak-paneer-recipe-easy-paneer-recipes-step-by-step-pics/",
+    "image": null,
+    "procedure": "Wilt the washed spinach briefly in a little hot oil along with the green chilies and cashews, then let it cool and blend to a smooth puree. In the same pan, fry the chopped onion until golden, add the ginger garlic paste, then the tomato and salt, cooking until soft. Stir in the garam masala, pour in a little water, and simmer until everything melds together. Add the kasuri methi and the spinach puree and let it bubble gently for a couple of minutes - don't overcook or the spinach loses its bright color. Fold in the paneer cubes, warm through, and stir in the cream if using before serving.",
+    "ingredients": [
+      {
+        "name": "paneer",
+        "amount": 1.25,
+        "unit": "cup"
+      },
+      {
+        "name": "spinach",
+        "amount": 4,
+        "unit": "cup"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "green chili",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "kasuri methi",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "cream",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cashews",
+        "amount": 10,
+        "unit": "pcs"
+      }
+    ]
+  },
+  {
+    "id": "jeera-rice",
+    "name": "Jeera Rice",
+    "url": "https://www.indianhealthyrecipes.com/jeera-rice-recipe/",
+    "image": null,
+    "procedure": "Rinse the basmati rice a few times and let it soak for about 20 minutes, then drain well. Heat ghee in a pot and add the cumin seeds, bay leaf, cardamom, cinnamon and cloves, letting them sizzle until fragrant. Add the drained rice and green chili and fry gently for a couple of minutes, taking care not to break the grains. Pour in water, season with salt, and cook covered until the rice is tender and the water is absorbed. Let it rest briefly off the heat, then fluff gently with a fork before serving alongside a curry or dal.",
+    "ingredients": [
+      {
+        "name": "basmati rice",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "ghee",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": 2,
+        "unit": "tsp"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "green cardamom",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "cinnamon stick",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cloves",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 0.75,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "vegetable-pulao",
+    "name": "Vegetable Pulao",
+    "url": "https://www.indianhealthyrecipes.com/pulao-recipe-veg-pulao-recipe/",
+    "image": null,
+    "procedure": "Rinse and soak the basmati rice for 20 minutes, then drain. Heat oil and temper the bay leaf and cinnamon stick, then fry the sliced onion and green chilies until golden. Stir in the mixed vegetables - carrot, green beans, peas and potato - along with the ginger garlic paste and mint, and saute for a couple of minutes. Pour in water, season with salt, and bring it to a boil. Add the drained rice, stir gently, cover, and cook until the rice is tender and the liquid is absorbed. Let it rest for ten minutes, then fluff with a fork before serving.",
+    "ingredients": [
+      {
+        "name": "basmati rice",
+        "amount": 1.5,
+        "unit": "cup"
+      },
+      {
+        "name": "oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "green chili",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "carrot",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "green beans",
+        "amount": 4,
+        "unit": "pcs"
+      },
+      {
+        "name": "green peas",
+        "amount": 0.5,
+        "unit": "cup"
+      },
+      {
+        "name": "potato",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "mint leaves",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cinnamon stick",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "salt",
+        "amount": 1,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "cucumber-raita",
+    "name": "Cucumber Raita",
+    "url": "https://www.vegrecipesofindia.com/cucumber-raita-recipe/",
+    "image": null,
+    "procedure": "Whisk the yogurt in a bowl until smooth. Stir in the finely chopped cucumber. Mix in the cumin powder, red chili powder and salt. Fold through the fresh coriander leaves and serve chilled, optionally with a little extra cumin powder sprinkled on top.",
+    "ingredients": [
+      {
+        "name": "cucumber",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "yogurt",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "cumin powder",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander leaves",
+        "amount": 1,
+        "unit": "tbsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "bhindi-masala",
+    "name": "Bhindi Masala",
+    "url": "https://www.indianhealthyrecipes.com/bhindi-masala-recipe/",
+    "image": null,
+    "procedure": "Wash the okra and dry it thoroughly, then trim and chop it into pieces. Fry it in hot oil for several minutes until it's no longer slimy, then set it aside. In the same pan, toast the cumin seeds, then fry the chopped onion and green chili until golden. Add the ginger garlic paste, then the tomatoes and salt, cooking until they turn soft and jammy. Stir in the turmeric, red chili powder, garam masala and coriander powder, then return the fried okra to the pan along with the kasuri methi. Cover and simmer briefly, then uncover and cook a little longer to dry out any extra moisture before serving.",
+    "ingredients": [
+      {
+        "name": "okra",
+        "amount": 20,
+        "unit": "pcs"
+      },
+      {
+        "name": "oil",
+        "amount": 3,
+        "unit": "tbsp"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 0.75,
+        "unit": "tbsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander powder",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "kasuri methi",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "egg-curry",
+    "name": "Egg Curry",
+    "url": "https://www.indianhealthyrecipes.com/punjabi-egg-curry-anda-curry-dhaba-style/",
+    "image": null,
+    "procedure": "Hard boil the eggs, peel them, and lightly fry them in a little oil until golden, then set aside. In the same pan, heat oil and temper the bay leaf and cardamom, then fry the chopped onion until golden. Stir in the ginger garlic paste and green chili, then add the tomatoes and salt and cook until soft. Add the turmeric, red chili powder, garam masala and coriander powder and fry until fragrant. Pour in a little water and simmer until the gravy thickens, then slide the fried eggs back in and simmer a few minutes more before serving.",
+    "ingredients": [
+      {
+        "name": "egg",
+        "amount": 5,
+        "unit": "pcs"
+      },
+      {
+        "name": "onion",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "tomato",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 1,
+        "unit": "tsp"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "oil",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "green cardamom",
+        "amount": 2,
+        "unit": "pcs"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander powder",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ]
+  },
+  {
+    "id": "rajma-masala",
+    "name": "Rajma Masala",
+    "url": "https://www.indianhealthyrecipes.com/rajma-recipe-rajma-masala-recipe/",
+    "image": null,
+    "procedure": "Soak the kidney beans overnight, then pressure-cook them until soft. Heat ghee and toast the cumin seeds and bay leaf, then fry the chopped onion and green chili until deep golden. Stir in the ginger garlic paste, then add the tomatoes and cook until the raw smell disappears. Add the turmeric, red chili powder, garam masala and coriander powder and fry briefly until fragrant. Add the cooked beans along with some of their cooking liquid and simmer for ten to fifteen minutes, seasoning with salt to taste, before serving with rice.",
+    "ingredients": [
+      {
+        "name": "kidney beans",
+        "amount": 1,
+        "unit": "cup"
+      },
+      {
+        "name": "ghee",
+        "amount": 2,
+        "unit": "tbsp"
+      },
+      {
+        "name": "bay leaf",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "cumin seeds",
+        "amount": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "onion",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "green chili",
+        "amount": 1,
+        "unit": "pcs"
+      },
+      {
+        "name": "ginger garlic paste",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "tomato",
+        "amount": 3,
+        "unit": "pcs"
+      },
+      {
+        "name": "turmeric powder",
+        "amount": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "name": "red chili powder",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "garam masala",
+        "amount": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "name": "coriander powder",
+        "amount": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "name": "salt",
+        "amount": 0.5,
+        "unit": "tsp"
+      }
+    ]
+  }
+];

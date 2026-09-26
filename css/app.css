@@ -1,0 +1,13 @@
+.ingredient-row {
+  align-items: flex-end;
+}
+
+.ingredient-req {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 0.9em;
+}
+
+#loading-message.error {
+  background-color: #fff6f6 !important;
+  color: #9f3a38 !important;
+}

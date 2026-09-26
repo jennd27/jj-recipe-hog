@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What's in my fridge? - Indian Recipe Finder</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fomantic-ui/2.9.3/semantic.min.js"></script>
+</head>
+<body>
+  <div class="ui container" style="margin-top: 2em; margin-bottom: 4em;">
+    <h1 class="ui header">What's in my fridge?</h1>
+    <p>Enter what ingredients you have on hand and find the easy Indian recipes you're closest to being able to cook.</p>
+
+    <div id="loading-message" class="ui info message">Loading...</div>
+
+    <form id="search-form" class="ui form segment">
+      <h3 class="ui header">Ingredients I have</h3>
+      <div id="ingredient-rows"></div>
+      <button type="button" id="add-ingredient-row" class="ui basic button">
+        <i class="plus icon"></i> Add ingredient
+      </button>
+      <div class="ui divider"></div>
+      <button type="submit" class="ui primary button">Find recipes</button>
+    </form>
+
+    <div id="results" style="margin-top: 2em;"></div>
+
+    <div class="ui divider"></div>
+
+    <div class="ui segment">
+      <h3 class="ui header">Unit converter</h3>
+      <p>Convert grams or milliliters into cups / tablespoons / teaspoons / liters (assumes water density &mdash; a good approximation for liquids, rougher for dry ingredients).</p>
+      <form id="converter-form" class="ui form">
+        <div class="fields">
+          <div class="six wide field">
+            <input type="number" id="converter-amount" min="0" step="any" placeholder="Amount" />
+          </div>
+          <div class="six wide field">
+            <select id="converter-input-unit" class="ui dropdown">
+              <option value="g">grams</option>
+              <option value="ml">ml</option>
+            </select>
+          </div>
+        </div>
+      </form>
+      <div id="converter-results"></div>
+    </div>
+  </div>
+
+  <script src="data/recipes.js"></script>
+  <script src="js/units.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/ingest.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/converter.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
