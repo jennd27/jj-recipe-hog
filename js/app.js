@@ -67,6 +67,24 @@ function statusLabel(status) {
   return '<span class="ui red label">missing</span>';
 }
 
+/* Procedures are stored as one paragraph; split on sentence ends into numbered steps. */
+function renderProcedure(procedure) {
+  if (!procedure) return '';
+  const steps = procedure
+    .split(/(?<=\.)\s+(?=[A-Z])/)
+    .map((s) => s.trim())
+    .filter(Boolean)
+    .map((s) => `<li>${s}</li>`)
+    .join('');
+
+  return `
+    <details class="procedure">
+      <summary>View recipe</summary>
+      <ol>${steps}</ol>
+    </details>
+  `;
+}
+
 function renderResults(ranked) {
   const $results = $('#results');
   if (ranked.length === 0) {
@@ -95,6 +113,7 @@ function renderResults(ranked) {
             <div class="description">
               <div class="ui list">${items}</div>
             </div>
+            ${renderProcedure(recipe.procedure)}
           </div>
         </div>
       `;

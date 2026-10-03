@@ -11,3 +11,23 @@
   background-color: #fff6f6 !important;
   color: #9f3a38 !important;
 }
+
+.procedure {
+  margin-top: 1em;
+}
+
+.procedure summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #db2828;
+}
+
+.procedure ol {
+  margin: 0.75em 0 0;
+  padding-left: 1.4em;
+}
+
+.procedure li {
+  margin-bottom: 0.5em;
+  line-height: 1.5;
+}
